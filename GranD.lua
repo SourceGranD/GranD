@@ -7746,8 +7746,8 @@ if text == ("تحديث السورس") and DevGranD(msg) then
 send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
 os.execute('rm -rf GranD.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/GranD/GranD/master/GranD.lua')
-os.execute('wget https://raw.githubusercontent.com/GranD/GranD/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceGranD/GranD/master/GranD.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceGranD/GranD/master/start.lua')
 dofile('GranD.lua')  
 return false
 end
@@ -7767,7 +7767,7 @@ database:set(bot_id.."GranD:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."GranD:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://BLACKBOTSS-source.tk/TeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://black-source.tk/BlackTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n⌔️︙قائمه الزخرفه \n — — — — — — — — — \n"
 i = 0
@@ -7787,7 +7787,7 @@ database:set(bot_id.."GranD:brj_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^برج (.*)$") and database:get(bot_id.."GranD:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://GranD-source.tk/GranDTeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://black-source.tk/BlackTeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 send(msg.chat_id_, msg.id_, br.ok.hso)
 end
@@ -7801,7 +7801,7 @@ database:set(bot_id.."GranD:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.."GranD:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://GranD-source.tk/GranDTeAM/Calculateage.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://black-source.tk/BlackTeAM/Calculateage.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 send(msg.chat_id_, msg.id_, ag.ok.hso)
 end
@@ -7815,7 +7815,7 @@ database:set(bot_id.."GranD:insta_bot"..msg.chat_id_,"open")
 end
 if text and text:match("^معلومات (.*)$") and database:get(bot_id.."GranD:insta_bot"..msg.chat_id_) == "open" then
 local Textni = text:match("^معلومات (.*)$")
-data,res = https.request('https://GranD-source.tk/GranDTeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
+data,res = https.request('https://black-source.tk/BlackTeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
 if res == 200 then
 muaed = json:decode(data)
 if muaed.Info == true then
@@ -7835,7 +7835,7 @@ end
 
 if text and text:match("^فلم (.*)$") and database:get(bot_id.."GranD:movie_bot"..msg.chat_id_) == "open" then
 local Textm = text:match("^فلم (.*)$")
-data,res = https.request('https://GranD-source.tk/GranDTeAM/movie.php?serch='..URL.escape(Textm)..'')
+data,res = https.request('https://black-source.tk/BlackTeAM/movie.php?serch='..URL.escape(Textm)..'')
 if res == 200 then
 getmo = json:decode(data)
 if getmo.Info == true then
@@ -7851,7 +7851,7 @@ end
 end
 end
 if text == "غنيلي" then
-data,res = https.request('https://GranD-source.tk/GranDTeAM/audios.php')
+data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
@@ -9234,8 +9234,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
 os.execute('rm -rf GranD.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/GranD/GranD/master/GranD.lua')
-os.execute('wget https://raw.githubusercontent.com/GranD/GranD/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceGranD/GranD/master/GranD.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceGranD/GranD/master/start.lua')
 dofile('GranD.lua')  
 return false
 end
