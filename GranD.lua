@@ -8189,23 +8189,19 @@ send(msg.chat_id_, msg.id_, "⌔︙تم التحديث")
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://GranD-source.tk/GranDTeAM/ChatMember.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'⌔︙شترك في قناة السورس اولآ @aaaaw .')   
-return false 
-end
+
 Text = [[
 *- GranD Team .*
  — — — — — — — — — 
      
 [⌔︙ GranD 𝖲𝗈𝗎𝗋𝖼𝖾  .](http://t.me/aaaaw)
      
-[⌔︙ ToolS GranD .](https://t.me/joinchat/AAAAAFPp_oZNV4U3n91zRQ)
+[⌔︙ GranD Developer .](http://t.me/XXKXX)
+
+
+
      
-[⌔︙ 𝖳WSL Source GranD .](http://t.me/TwSLGranDBot)
-     
-[⌔︙   𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖥𝗋𝗈𝗆 𝖸𝗈𝗎𝗍𝖾𝖻 .](http://t.me/YOOTBOT)
+
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
