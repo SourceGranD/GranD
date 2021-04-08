@@ -8196,7 +8196,7 @@ send(msg.chat_id_, msg.id_,'⌔︙عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Text = [[⌔ ︙  @LC6BOT   ]]
+Text = [[⌔ ︙  https://my.telegram.org/auth   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'الاوامر' and Addictive(msg) then  
