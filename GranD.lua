@@ -6320,7 +6320,7 @@ local ktSJJJJ = {
 }
 ktbrok = math.random(#ktSJJJJ)
 send(msg.chat_id_, msg.id_, ktSJJJJ[ktbrok]) 
-return false 
+
 end
 if text ==("مسح المطرودين") and Addictive(msg) then    
 local function delbans(extra, result)  
