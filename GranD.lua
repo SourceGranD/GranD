@@ -6305,7 +6305,7 @@ send(msg.chat_id_, msg.id_,"⌔︙ ارسل لي الاسم الان ")
 end
 return false
 end
-if text == "كت" or "كت تويت") then
+if text == "كت" or "كت تويت" then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
